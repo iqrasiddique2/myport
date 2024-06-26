@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link rel="icon" href="favicon_io/android-chrome-512x512.png" type="image/png">
+    <style>
+        body {
+            background-color: #f0f8ff;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .left {
+            display: inline-block;
+            position: absolute;
+            left: 34px;
+            top: 1px;
+        }
+        .left img {
+            width: 170px;
+        }
+        .mid {
+            display:block;
+        width: 33%;
+        margin:15px auto;
+        border:3px solid plum;
+        border-radius: 30px;
+        }
+        .right {
+            position: absolute;
+            right: 34px;
+            top: 20px;
+            display: inline-block;
+            border: 2px solid plum;
+        }
+        .btn {
+            margin: 2px;
+            padding: 2px;
+            color: black;
+            background-color: aliceblue;
+            border: none;
+            font-size: medium;
+            cursor: pointer;
+        }
+        .btn:hover {
+            background-color: plum;
+        }
+        .navbar {
+            display: inline-block;
+            list-style: none;
+            padding: 0;
+        }
+        .navbar li {
+            display: inline-block;
+            font-size: 20px;
+        }
+        .navbar li a {
+            color: rgb(1, 1, 1);
+            text-decoration: none;
+            padding: 38px 11px;
+        }
+        .navbar li a:hover,
+        .navbar li a.active {
+            text-decoration: underline;
+            color: purple;
+        }
+        .container {
+            width: 33%;
+            margin: 186px auto;
+            padding: -37px;
+            font-size: x-large;
+            color: purple;
+            text-align: center;
+        }
+    
+        .logoright img {
+    width: 290px;
+    display: inline-block;
+    border: 6px solid rebeccapurple;
+    position: absolute;
+    border-radius: 50%;
+    right: 148px;
+    top: 176px;
+}
+        .About, .projects, .resume, .Contactinfo {
+            border: 3px solid plum;
+            border-radius: 37px;
+            margin: 40px auto;
+            padding: 20px;
+            font-size: large;
+            color: purple;
+            width: 80%;
+        }
+        .About h3, .projects h3, .resume h3, .Contactinfo h3 {
+            margin-top: 0;
+        }
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body>
+    <div class="left">
+        <img src="pw.png" alt="Logo">
+    </div>
+    <div class="mid">
+        <ul class="navbar">
+            <li><a href="#section1">Home</a></li>
+            <li><a href="#section2">About</a></li>
+            <li><a href="#section3">Projects</a></li>
+            <li><a href="#section4">Resume</a></li>
+            <li><a href="#section5">Contact</a></li>
+        </ul>
+    </div>
+    <section id="section1">
+        <div class="container">
+            <p style="color: black;">Hey, I'm Iqra Siddique</p>
+            <p style="font-size: xxx-large;">WEB DEVELOPER</p>
+            <p style="color: rebeccapurple;">I'm a web developer, I'll help you build beautiful Websites.</p>
+            <div class="logoright">
+                <img src="log.png" alt="Profile Picture">
+            </div>
+        </div>
+    </section>
+    <section id="section2">
+        <div class="About">
+            <h3>About Me</h3>
+            <p style="color: black;">
+                I'm a third-year Computer Science honors student with a strong foundation in MySQL, Python, C#, C, HTML, CSS, Java, and Kotlin. Throughout my academic journey, I’ve worked on various projects that have helped me enhance my skills in software development. My true passion lies in designing and developing websites, allowing me to combine my technical skills with creativity. I’ve also designed and developed an Android app, which was a great experience in mobile development.
+                Currently, I'm expanding my knowledge by taking courses on Coursera in UI/UX design, cybersecurity, and IoT. These courses are helping me stay updated with the latest trends and technologies in the field.
+                My hobbies include creative activities such as sketching, drawing, and painting. Besides my creative pursuits, I enjoy playing badminton, chess, and watching various thriller shows.
+            </p>
+        </div>
+    </section>
+    <section id="section3">
+        <div class="projects">
+            <h3>Projects</h3>
+            <h5><a href="app.pdf" target="_blank" style="color: purple; text-decoration: underline;">Hostel Management app</a></h5>
+            <ul>
+                <li><p style="color: black; font-style: italic;">Designed and developed using Kotlin in Android Studio.</p></li>
+                <li><p style="color: black; font-style: italic;">Simplified hostel administration with user-friendly interfaces and robust functionality.</p></li>
+                <li><p style="color: black; font-style: italic;">Implemented Firebase for backend data storage and authentication.</p></li>
+                <li style="color: rebeccapurple;"><a href="app.pdf" target="_blank" style="text-decoration-color:black;"><h5><font style="color:black;">View project</font></h5></a></li>
+        </ul>
+            </ul>
+            <h5><a href="income_tracker.pdf" target="_blank" style="color: purple; text-decoration: underline;">Income Tracker</a></h5>
+            <ul>
+                <li><p style="color: black; font-style: italic;">Developed a desktop app using C# and .NET Framework.</p></li>
+                <li><p style="color: black; font-style: italic;">Enabled users to track and manage their household finances.</p></li>
+                <li><p style="color: black; font-style: italic;">Provided detailed financial insights, enhancing users' financial planning.</p></li>
+                <li><p style="color: rebeccapurple;"><a href="income tracker.pdf" target="_blank" style="text-decoration-color:black;"><h5><font style="color:black;">View project</font></h5></a></li>
+            </ul> 
+            </ul>
+            <h5><a href="tokyo_tales.pdf" target="_blank" style="color: purple; text-decoration: underline;">Tokyo Tales (Hackathon Project)</a></h5>
+            <ul>
+                <li><p style="color: black; font-style: italic;">Participated in a 24-hour hackathon to develop a web solution for Japanese language learning.</p></li>
+                <li><p style="color: black; font-style: italic;">Utilized HTML, CSS, and Python, with Firebase for backend authentication.</p></li>
+            </ul>
+        </div>
+    </section>
+    <section id="section4">
+        <div class="resume">
+            <h3>Resume</h3>
+            <a href="resume.pdf" target="_blank"><h5>View Resume</h5></a>
+        </div>
+    </section>
+    <section id="section5">
+        <div class="Contactinfo">
+            <h3>Contact info</h3>
+            <p>
+                <a href="mailto:iqra.meraj@somaiya.edu" class="btn" style="font-size: xx-large; color: rebeccapurple;">Email: iqra.meraj@somaiya.edu</a><br>
+                <a href="https://linkedin.com/in/iqra-siddique-298539275" class="btn" style="font-size: xx-large; color: rebeccapurple;">LinkedIn</a>
+            </p>
+        </div>
+    </section>
+</body>
+</html>
